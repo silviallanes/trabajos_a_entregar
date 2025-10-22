@@ -54,6 +54,7 @@ li{
     font-size: 14px;
     color:var(--primary-500);
     text-decoration: none;
+    text-align: center;
 }
 .mails-section{
     display:flex;
@@ -111,6 +112,99 @@ li{
     height:16px;
     line-height:24px;
    
+}
+.section-header-sitio{
+    display:flex;
+    flex-direction: row;
+    gap:30px;
+    
+}
+.container-menu-header{
+    display:flex;
+    flex-direction:row;
+    gap:60px;
+}
+.menu-header{
+    display:flex;
+    flex-direction:row;
+    justify-content: start;
+    font-size: 16px;
+    color: var(--neutral-100);
+    gap:20px;
+}
+.login-btn {
+      background-color: #1abc9c;
+      border: none;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+.login-btn:hover {
+      background-color: #16a085;
+    }
+
+.h-social-icons{
+    display:flex;
+    flex-direction:row;
+    justify-content: end;
+   
+}
+.container-copyright-footer{
+    
+    color:var(--neutral-600);
+    display:flex;
+    justify-content: row;
+    gap:70px;
+}
+.paragraph-footer{
+    font-size: var(--ff-primary);
+    font-size:14px;
+}
+.bi-facebook{
+    color:var(--neutral-600);
+}
+.bi-linkedin{
+    color:var(--neutral-600);
+}
+.bi-twitter-x{
+    color:var(--neutral-600);
+}
+.bi-instagram{
+    color:var(--neutral-600);
+}
+.feature-tarjeta{
+    display:flex;
+    flex-direction: row;
+   
+}
+.container-footer{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+}
+.footer-logo-section{
+    display:flex;
+    flex-direction:row;
+    gap:50px;
+   
+   
+}
+.section-container-tarjetas{
+    display:flex;
+    flex-direction:row;
+    margin-bottom:20px;
+}
+.container-footer-politicas{
+    display:flex;
+    flex-direction:row;
+    font-size: 14px;
+    font-weight:200;
+    justify-content: center;
+    align-items: center;
 }
 /*
 CONDICIONES
