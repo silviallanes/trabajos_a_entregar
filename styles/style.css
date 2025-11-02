@@ -2,231 +2,348 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 /*permite guardar una variable en css*/
-:root{
+:root {
     --ff-primary: "DM Sans", sans-serif;
-    --neutral-0:#ffffff;
-    --neutral-100:#f0f1f5;
-    --neutral-600:#1d1e20;
-    --primary-200:#cbc8ff;
+    --neutral-0: #ffffff;
+    --neutral-100: #f0f1f5;
+    --neutral-600: #1d1e20;
+    --primary-200: #cbc8ff;
     --primary-300: #987bed;
-    --primary-500:#673de5;
+    --primary-500: #673de5;
 }
-*{
+
+* {
     font-family: var(--ff-primary);
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-li{
+
+li {
     list-style-type: none;
 }
-.pill{
-    padding:4px 12px;
-    border-radius:50px;
+
+/*sección de los mensajes*/
+.pill {
+    padding: 4px 12px;
+    border-radius: 50px;
     text-align: center;
     background-color: var(--neutral-100);
 }
+
 /*clase modificadora de pill*/
-.pill--primary-200{
+.pill--primary-200 {
     background-color: var(--primary-200);
 }
-.bg--neutral-100{
+
+.bg--neutral-100 {
     background-color: var(--neutral-100);
 }
-.title{
+
+.title {
     font-size: 56px;
     font-weight: 400;
     text-align: center;
     line-height: 64px;
 }
-.subtitle{
+
+.subtitle {
     font-size: 40px;
     font-weight: 400;
     text-align: start;
     line-height: 45px;
 }
-.paragraph{
+
+.paragraph {
     font-size: 16px;
     line-height: 24px;
 }
-.link{
+
+.link {
     font-weight: 700;
     font-size: 14px;
-    color:var(--primary-500);
+    color: var(--primary-500);
     text-decoration: none;
     text-align: center;
 }
-.mails-section{
-    display:flex;
+.container-menu-navegacion .link{
+    color:var(--neutral-600);
+}
+.container-menu-navegacion .link:hover{
+    color:var(--primary-500);
+}
+
+.mails-section {
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    padding:104px 0;
+    padding: 104px 0;
 }
-.section-content{
-    width: 1958px;
+
+.section-content {
+    width: 1800px;
     padding: 0 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
 }
-.mails-section__article-container{
-    display:flex;
+
+.mails-section__article-container {
+    display: flex;
     flex-direction: row;
-    gap:20px;
+    gap: 20px;
 }
-.feature-article{
-    flex:1;
+
+.feature-article {
+    flex: 1;
     background-color: var(--neutral-0);
     border-radius: 16px;
     padding: 48px 32px 0;
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap: 20px;
     align-items: start;
 }
-.feature-article__image{
+
+.feature-article__image {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: end;
 }
-.feature-article__image img{
+
+.feature-article__image img {
     width: 100%;
 }
-.section-header{
-    display:flex;
+
+.section-header {
+    display: flex;
     flex-direction: column;
-    gap:16px;
+    gap: 16px;
     align-items: center;
 }
-.feature-list{
-    display:flex;
+
+.feature-list {
+    display: flex;
     flex-direction: column;
-    gap:8px;
+    gap: 8px;
 }
-.feature-list .bi-check{
-    color:var(--primary-500);
+
+.feature-list .bi-check {
+    color: var(--primary-500);
     font-size: 16px;
     font-weight: 400;
-    height:16px;
-    line-height:24px;
-   
-}
-.section-header-sitio{
-    display:flex;
-    flex-direction: row;
-    gap:30px;
-    
-}
-.container-menu-header{
-    display:flex;
-    flex-direction:row;
-    gap:60px;
-}
-.menu-header{
-    display:flex;
-    flex-direction:row;
-    justify-content: start;
-    font-size: 16px;
-    color: var(--neutral-100);
-    gap:20px;
-}
-.login-btn {
-      background-color: #1abc9c;
-      border: none;
-      color: white;
-      padding: 8px 16px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
+    height: 16px;
+    line-height: 24px;
 
-.login-btn:hover {
-      background-color: #16a085;
-    }
+}
 
-.h-social-icons{
-    display:flex;
-    flex-direction:row;
-    justify-content: end;
-   
-}
-.container-copyright-footer{
-    
-    color:var(--neutral-600);
-    display:flex;
-    justify-content: row;
-    gap:70px;
-}
-.paragraph-footer{
-    font-size: var(--ff-primary);
-    font-size:14px;
-}
-.bi-facebook{
-    color:var(--neutral-600);
-}
-.bi-linkedin{
-    color:var(--neutral-600);
-}
-.bi-twitter-x{
-    color:var(--neutral-600);
-}
-.bi-instagram{
-    color:var(--neutral-600);
-}
-.feature-tarjeta{
-    display:flex;
+/*seccion del header-menu*/
+.section-header-sitio {
+    display: flex;
     flex-direction: row;
-   
+    justify-content: space-between;
+    align-items: end;
+    height: 80px;
+    gap: 30px;
+
 }
-.container-footer{
-    display:flex;
-    flex-direction:column;
-    margin-bottom:20px;
+
+.container-menu-header {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
 }
-.footer-logo-section{
-    display:flex;
-    flex-direction:row;
-    gap:50px;
-   
-   
-}
-.section-container-tarjetas{
-    display:flex;
-    flex-direction:row;
-    margin-bottom:20px;
-}
-.container-footer-politicas{
-    display:flex;
-    flex-direction:row;
-    font-size: 14px;
-    font-weight:200;
-    justify-content: center;
+
+.menu-izquierda {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
     align-items: center;
 }
+
+.container-menu-navegacion {
+    display: flex;
+    flex-direction: row;
+    /*text-align: center;
+    align-content: left;*/
+    gap: 30px;
+    color:#1d1e20;
+}
+.container-menu-navegacion .container-menu-izquierdo{
+   
+    display: flex;
+    flex-direction: row;
+    color: var(--neutral-600);
+    gap: 30px;
+
+}
+
+
+
+
+.menu-derecha {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 40px;
+    gap: 30px;
+    justify-content: end;
+
+}
+
+.logo-hostinger-header {
+    padding: 29px 0 29px 40px;
+    text-align: right;
+}
+
+/*.hero-black-friday{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:104px 0;
+}
+
+
+/*.login-btn:hover {
+      background-color: #16a085;
+    }*/
+
+/*seccion del footer*/
+
+.h-social-icons {
+    display: flex;
+    flex-direction: row;
+    font-size: 26px;
+    justify-content: right;
+    gap: 10px;
+
+}
+
+.container-copyright-footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: row;
+    align-content: space-between;
+    gap:24px;
+    font-size: 14px;
+    font: weight 80px;
+}
+
+.paragraph-footer {
+    line-height: 24px;
+    font-size: var(--ff-primary);
+    letter-spacing: -0.5px;
+}
+
+.bi-facebook {
+    color: var(--neutral-600);
+}
+
+.bi-linkedin {
+    color: var(--neutral-600);
+}
+
+.bi-twitter-x {
+    color: var(--neutral-600);
+}
+
+.bi-instagram {
+    color: var(--neutral-600);
+}
+
+.feature-tarjeta {
+    display: flex;
+    flex-direction: row;
+    align-content: start;
+    width: 70px;
+    height: 28px;
+    gap: 8px;
+}
+
+.container-footer {
+    width: 62%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: var(--primary-200);
+    gap: 20px;
+}
+
+.footer-logo-redes {
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-container-tarjetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+}
+
+.container-footer-politicas {
+    display: flex;
+    flex-direction: row;
+    color: var(--neutral-600);
+    text-align: center;
+    justify-items: right;
+    gap: 8px;
+}
+.container-footer-politicas .bi-chevron-down{
+    font-size: 14px;
+    color: var(--primary-500);
+    font-weight: 400;
+    height: 16px;
+    line-height: 24px;
+    align-self: center;
+}
+
+
+.container-footer-politicas a {
+    text-decoration: none;
+    color: #1d1e20;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: -0.8px;
+}
+
+.container-footer-politicas a:hover {
+    color: #673de5;
+}
+
+.container-footer-politicas:hover {
+    color: var(--primary-500);
+}
+
+
+
 /*
 CONDICIONES
 si el ancho de mi pagina es < a 70px ==> ejecutare este codigo de css*/
-@media screen and (max-width: 700px){
-    .mails-section{
+@media screen and (max-width: 700px) {
+    .mails-section {
         background-color: blue;
         flex-direction: column;
     }
-    .section-content{
+
+    .section-content {
         width: 90%;
     }
-    .mails-section__article-container{
-        width:90%;
-        display:flex;
+
+    .mails-section__article-container {
+        width: 90%;
+        display: flex;
         flex-direction: column;
-        
+
     }
 }
 
-@media  screen and (max-width: 350px){
-    .section-content{
+@media screen and (max-width: 350px) {
+    .section-content {
         background-color: rgb(0, 0, 0);
     }
 }
